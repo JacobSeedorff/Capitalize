@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>TextBox</title>
+
+    <script>
+        function Capitalizer() {
+            var y = document.getElementById("textbox_id").value;
+            document.getElementById("textbox_id").value = y.toUpperCase();
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Capitalizer</h1>
+    <input type="text" name="textbox1" id="textbox_id" />
+    <input type="submit" name="button" id="button1" onclick="Capitalizer()" value="Capitalize" />
+</body>
+
+</html>
